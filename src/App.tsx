@@ -1,4 +1,5 @@
 import './App.css'
+import { Link } from 'react-router'
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
       </div>
 
       {/* We'll extract components later. */}
-      <button id='start'>Start</button>
+      <Link className='start' to='/levels'>Start</Link>
 
       <footer>Made with 💖 in <span className='helix'>Helix</span></footer>
     </div>
