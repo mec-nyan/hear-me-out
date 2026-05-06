@@ -6,20 +6,23 @@
 //
 
 import { Link } from "react-router"
+import './Chooser.css'
 
 // These levels are just an exmaple.  It needs to be refined.
 export default function Chooser() {
   const levels = [
-    'unisons and octaves',
-    'minor and major seconds',
-    'minor and major thirds',
-    'fourths (just/augmented)',
-    'fifths (just/augmented/diminished)',
-    'minor and major sixths',
-    'minor, major and diminished sevenths'
+    'Unisons and octaves.',
+    'Minor and major seconds.',
+    'Minor and major thirds.',
+    'Fourths (just/augmented).',
+    'Fifths (just/augmented/diminished).',
+    'Minor and major sixths.',
+    'Minor, major and diminished sevenths.'
   ]
 
   const levelDivs = levels.map((lvl) => {
+    // TODO: Add an overlay div with a 'blocked' icon (i.e.  ) and make the item greyed out
+    // for the locked levels.
     return <div className='lvl'>{lvl}</div>
   })
 
@@ -27,11 +30,14 @@ export default function Chooser() {
     <div className='levels'>
       <div className='top-nav'>
         {/* TODO: Add icons. */}
-        <Link className='back' to='/'>{"<-"}</Link>
+        <Link className='back' to='/'>←</Link>
         <h1>Level</h1>
+        <span className='icon-filler'></span>
       </div>
 
-      {levelDivs}
+      <div className='lvl-group'>
+        {levelDivs}
+      </div>
 
     </div>
   )
