@@ -11,13 +11,17 @@ import './Chooser.css'
 // These levels are just an exmaple.  It needs to be refined.
 export default function Chooser() {
   const levels = [
+    'Ascendent and descendent',
     'Unisons and octaves.',
     'Minor and major seconds.',
     'Minor and major thirds.',
     'Fourths (just/augmented).',
     'Fifths (just/augmented/diminished).',
     'Minor and major sixths.',
-    'Minor, major and diminished sevenths.'
+    'Minor, major and diminished sevenths.',
+    'Fourths and fifths',
+    'Sixths and thirds',
+    'Seconds and sevenths',
   ]
 
   const levelDivs = levels.map((lvl) => {
