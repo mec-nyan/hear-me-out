@@ -5,10 +5,14 @@
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(28, 28, 28, 0.6);
   width: 100%;
   padding: 0 8px;
   display: grid;
@@ -18,16 +22,8 @@
   align-items: center;
   justify-items: center;
   /* TODO: extract to variables. Maybe use sass. */
-  background-color: #1c1c1c;
   border-bottom: 1px solid #303030;
-}
-
-@media (min-width: 600px) {
-  .top-nav {
-    grid-template-columns: 64px 1fr 64px;
-    height: 64px;
-    min-height: 64px;
-  }
+  backdrop-filter: blur(8px);
 }
 
 h1 {
@@ -41,20 +37,31 @@ h1 {
 }
 
 .challenge-group {
+  padding-top: calc(56px + 1rem);
   width: 100%;
-  height: 100%;
-  padding-top: 2rem;
-  overflow: scroll;
 }
 
 .challenge {
+  display: grid;
+  grid-template-columns: 5rem 6fr;
+  align-items: center;
+  justify-items: center;
   border-radius: 8px;
   background-color: #242424;
-  padding: 2rem;
+  height: 5rem;
   margin: 0.8rem 10%;
   width: 80%;
   color: #d0d0d0;
   border: 1px solid #383838;
+}
+
+.title-group {
+  /* border: 1px solid cyan; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .locked {
@@ -65,8 +72,8 @@ h1 {
 
 .icon-locked,
 .icon-unlocked {
-  transform: translateY(4px);
-  margin-right: 1rem;
+  /* transform: translateY(4px); */
+  font-size: 2rem;
   color: mediumpurple;
 }
 
@@ -74,13 +81,35 @@ h1 {
   color: darkgoldenrod;
 }
 
-.locked-hint {
-  margin-left: 1rem;
-  font-style: italic;
+.hint-locked {
+  /* font-style: italic; */
+  color: #606060;
+  font-family: monospace;
+}
+
+.hint-done {
   color: mediumpurple;
+  font-family: monospace;
+}
+
+.hint-try {
+  font-style: italic;
+  color: goldenrod;
   font-family: monospace;
 }
 
 .help-icon {
   color: mediumturquoise;
+}
+
+@media (min-width: 600px) {
+  .top-nav {
+    grid-template-columns: 64px 1fr 64px;
+    height: 64px;
+    min-height: 64px;
+  }
+
+  .challenge-group {
+    padding-top: calc(64px + 1rem);
+  }
 }

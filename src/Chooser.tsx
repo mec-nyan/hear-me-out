@@ -11,23 +11,24 @@ import './Chooser.css'
 // TODO: This will live on its own file/module.
 interface Challenge {
   locked: boolean
+  completed: boolean
   title: string
 }
 
 // These levels are just an exmaple.  It needs to be refined.
 export default function Chooser() {
   const levels = [
-    { locked: false, title: 'Ascendent and descendent'},
-    { locked: false, title: 'Unisons and octaves.'},
-    { locked: true, title: 'Minor and major seconds.'},
-    { locked: true, title: 'Minor and major thirds.'},
-    { locked: true, title: 'Fourths (just/augmented).'},
-    { locked: true, title: 'Fifths (just/augmented/diminished).'},
-    { locked: true, title: 'Minor and major sixths.'},
-    { locked: true, title: 'Minor, major and diminished sevenths.'},
-    { locked: true, title: 'Fourths and fifths'},
-    { locked: true, title: 'Sixths and thirds'},
-    { locked: true, title: 'Seconds and sevenths'},
+    { locked: false, completed: true, title: 'Ascendent and descendent'},
+    { locked: false, completed: false, title: 'Unisons and octaves.'},
+    { locked: true, completed: false, title: 'Minor and major seconds.'},
+    { locked: true, completed: false, title: 'Minor and major thirds.'},
+    { locked: true, completed: false, title: 'Fourths (just/augmented).'},
+    { locked: true, completed: false, title: 'Fifths (just/augmented/diminished).'},
+    { locked: true, completed: false, title: 'Minor and major sixths.'},
+    { locked: true, completed: false, title: 'Minor, major and diminished sevenths.'},
+    { locked: true, completed: false, title: 'Fourths and fifths'},
+    { locked: true, completed: false, title: 'Sixths and thirds'},
+    { locked: true, completed: false, title: 'Seconds and sevenths'},
   ]
 
   const levelDivs = levels.map((challenge) => {
@@ -36,13 +37,25 @@ export default function Chooser() {
       ?
       <div className='challenge locked'>
         <span className='icon-locked material-icons'>lock</span>
-        <span className='challenge-title'>{challenge.title}</span>
-        <span className='locked-hint'> ( locked )</span>
+        <div className='title-group'>
+          <span className='hint-locked'>[ Locked ]</span>
+          <span className='challenge-title'>{challenge.title}</span>
+        </div>
       </div>
       :
       <div className='challenge unlocked'>
         <span className='icon-unlocked material-icons'>lock_open</span>
-        <span className='challenge-title'>{challenge.title}</span>
+        <div className='title-group'>
+          {/* TODO: Let the user know she will unlock the following levels by playing these first. */}
+          {
+            challenge.completed
+            ?
+            <span className='hint-done'>[ Completed ]</span>
+            :
+            <span className='hint-try'>Try now!</span>
+          }
+          <span className='challenge-title'>{challenge.title}</span>
+        </div>
       </div>
     )
   })
@@ -53,7 +66,7 @@ export default function Chooser() {
         <Link to='/'>
           <span className='icon-left material-icons'>arrow_back</span>
         </Link>
-        <h1>Challenge</h1>
+        <h1>Challenges</h1>
         <span className='help-icon material-icons'>question_mark</span>
       </div>
 
