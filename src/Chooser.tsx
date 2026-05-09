@@ -34,9 +34,10 @@ export default function Chooser() {
     <div className='levels'>
       <div className='top-nav'>
         {/* TODO: Add icons. */}
-        <Link className='back' to='/'>←</Link>
+        <Link to='/'>
+          <span className='icon-left material-symbols-outlined'>arrow_back</span>
+        </Link>
         <h1>Level</h1>
-        <span className='icon-filler'></span>
       </div>
 
       <div className='lvl-group'>
