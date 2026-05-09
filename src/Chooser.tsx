@@ -8,39 +8,56 @@
 import { Link } from "react-router"
 import './Chooser.css'
 
+// TODO: This will live on its own file/module.
+interface Challenge {
+  locked: boolean
+  title: string
+}
+
 // These levels are just an exmaple.  It needs to be refined.
 export default function Chooser() {
   const levels = [
-    'Ascendent and descendent',
-    'Unisons and octaves.',
-    'Minor and major seconds.',
-    'Minor and major thirds.',
-    'Fourths (just/augmented).',
-    'Fifths (just/augmented/diminished).',
-    'Minor and major sixths.',
-    'Minor, major and diminished sevenths.',
-    'Fourths and fifths',
-    'Sixths and thirds',
-    'Seconds and sevenths',
+    { locked: false, title: 'Ascendent and descendent'},
+    { locked: false, title: 'Unisons and octaves.'},
+    { locked: true, title: 'Minor and major seconds.'},
+    { locked: true, title: 'Minor and major thirds.'},
+    { locked: true, title: 'Fourths (just/augmented).'},
+    { locked: true, title: 'Fifths (just/augmented/diminished).'},
+    { locked: true, title: 'Minor and major sixths.'},
+    { locked: true, title: 'Minor, major and diminished sevenths.'},
+    { locked: true, title: 'Fourths and fifths'},
+    { locked: true, title: 'Sixths and thirds'},
+    { locked: true, title: 'Seconds and sevenths'},
   ]
 
-  const levelDivs = levels.map((lvl) => {
-    // TODO: Add an overlay div with a 'blocked' icon (i.e.  ) and make the item greyed out
-    // for the locked levels.
-    return <div className='lvl'>{lvl}</div>
+  const levelDivs = levels.map((challenge) => {
+    return (
+      challenge.locked
+      ?
+      <div className='challenge locked'>
+        <span className='icon-locked material-icons'>lock</span>
+        <span className='challenge-title'>{challenge.title}</span>
+        <span className='locked-hint'> ( locked )</span>
+      </div>
+      :
+      <div className='challenge unlocked'>
+        <span className='icon-unlocked material-icons'>lock_open</span>
+        <span className='challenge-title'>{challenge.title}</span>
+      </div>
+    )
   })
 
   return (
-    <div className='levels'>
+    <div className='challenges'>
       <div className='top-nav'>
-        {/* TODO: Add icons. */}
         <Link to='/'>
           <span className='icon-left material-icons'>arrow_back</span>
         </Link>
-        <h1>Level</h1>
+        <h1>Challenge</h1>
+        <span className='help-icon material-icons'>question_mark</span>
       </div>
 
-      <div className='lvl-group'>
+      <div className='challenge-group'>
         {levelDivs}
       </div>
 
