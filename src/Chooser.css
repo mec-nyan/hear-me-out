@@ -13,11 +13,20 @@
   padding: 0 8px;
   display: grid;
   grid-template-columns: 56px 1fr 56px;
-  grid-template-rows: 56px;
+  height: 56px;
+  min-height: 56px;
   align-items: center;
   justify-items: center;
   background-color: #202020;
   border-bottom: 1px solid #505050;
+}
+
+@media (min-width: 600px) {
+  .top-nav {
+    grid-template-columns: 64px 1fr 64px;
+    height: 64px;
+    min-height: 64px;
+  }
 }
 
 h1 {

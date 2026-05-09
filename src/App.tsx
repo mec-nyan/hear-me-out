@@ -17,7 +17,7 @@ function App() {
       {/* We'll extract components later. */}
       <Link className='start' to='/levels'>Start</Link>
 
-      <footer>Made with 💖 in <span className='helix'>Helix</span></footer>
+      <footer>Made with <span className='love material-icons'>favorite</span> in <span className='helix'>Helix</span>.</footer>
     </div>
   )
 }

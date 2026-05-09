@@ -12,12 +12,17 @@
   text-decoration: none;
   font-size: 2rem;
   padding: 0.5rem;
-  min-width: 50%;
+  min-width: 200px;
   outline: none;
   border: none;
-  border-radius: 0;
-  background-color: slateblue;
+  border-radius: 8px;
+  background-color: rebeccapurple;
   color: white;
+  transition: all 0.3s ease;
+}
+
+.start:hover {
+  filter: brightness(1.5);
 }
 
 .title {
@@ -38,6 +43,18 @@
 }
 
 footer {
+  font-size: 1.2rem;
   padding: 1rem;
   color: #a0a0a0;
+}
+
+.helix {
+  font-weight: bold;
+  color: mediumpurple;
+}
+
+.love {
+  color: hotpink;
+  transform: translateY(4px);
+  font-size: 1.5rem;
 }

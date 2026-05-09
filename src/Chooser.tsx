@@ -35,7 +35,7 @@ export default function Chooser() {
       <div className='top-nav'>
         {/* TODO: Add icons. */}
         <Link to='/'>
-          <span className='icon-left material-symbols-outlined'>arrow_back</span>
+          <span className='icon-left material-icons'>arrow_back</span>
         </Link>
         <h1>Level</h1>
       </div>
