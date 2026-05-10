@@ -10,8 +10,8 @@
 .start {
   text-align: center;
   text-decoration: none;
-  font-size: 2rem;
-  padding: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.8rem;
   min-width: 200px;
   outline: none;
   border: none;
@@ -80,9 +80,11 @@ footer {
   border-bottom: 1px solid #303030;
 }
 
+/* TODO: Move styles to its component's CSS file. */
 .top-bar .material-icons-outlined {
   color: mediumpurple;
   font-size: 1.5rem;
   text-align: center;
   line-height: 56px;
+  cursor: pointer;
 }

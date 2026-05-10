@@ -1,7 +1,11 @@
 import './App.css'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
+import LanguageSelector from './LanguageSelector';
 
 function App() {
+
+  const { t } = useTranslation();
 
   return (
     <div className='app'>
@@ -9,7 +13,7 @@ function App() {
         <div className='top-bar'>
           <span className='material-icons-outlined'>settings</span>
           <span className='material-icons-outlined'>light_mode</span>
-          <span className='material-icons-outlined' >translate</span>
+          <LanguageSelector />
         </div>
         <div className='title'>
           <small className='author'>Nano's</small>
@@ -22,7 +26,7 @@ function App() {
       </div>
 
       {/* We'll extract components later. */}
-      <Link className='start' to='/levels'>Start</Link>
+      <Link className='start' to='/levels'>{t('start')}</Link>
 
       {/* TODO: Add information in the footer. */}
       {/* This app is free (as in freedom) software, etc. */}
