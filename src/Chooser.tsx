@@ -62,11 +62,13 @@ export default function Chooser() {
 
   return (
     <div className='challenges'>
+      {/* TODO: We may want to add a paragraph here, i.e. "Choose your next challenge..."
+      or something. */}
       <div className='top-nav'>
         <Link to='/'>
           <span className='icon-left material-icons'>arrow_back</span>
         </Link>
-        <h1>Challenges</h1>
+        <span className='top-title'>Challenges</span>
         <span className='help-icon material-icons'>question_mark</span>
       </div>
 

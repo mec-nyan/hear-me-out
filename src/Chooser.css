@@ -14,26 +14,32 @@
   left: 0;
   background-color: rgba(28, 28, 28, 0.6);
   width: 100%;
-  padding: 0 8px;
   display: grid;
-  grid-template-columns: 56px 1fr 56px;
-  height: 56px;
-  min-height: 56px;
+  grid-template-columns: 64px 1fr 64px;
+  height: 64px;
+  min-height: 64px;
   align-items: center;
   justify-items: center;
   /* TODO: extract to variables. Maybe use sass. */
   border-bottom: 1px solid #303030;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(4px);
 }
 
-h1 {
+.top-title {
   color: #d0d0d0;
-  font-weight: normal;
+  font-size: 1.4rem;
 }
 
 .icon-left {
-  color: #a0a0a0;
-  font-size: 1.8rem;
+  color: mediumpurple;
+  font-size: 1.5rem;
+  /* border: 1px solid orange; */
+}
+
+.help-icon {
+  color: mediumpurple;
+  font-size: 1.5rem;
+  /* border: 1px solid orange; */
 }
 
 .challenge-group {
@@ -96,20 +102,4 @@ h1 {
   font-style: italic;
   color: goldenrod;
   font-family: monospace;
-}
-
-.help-icon {
-  color: mediumturquoise;
-}
-
-@media (min-width: 600px) {
-  .top-nav {
-    grid-template-columns: 64px 1fr 64px;
-    height: 64px;
-    min-height: 64px;
-  }
-
-  .challenge-group {
-    padding-top: calc(64px + 1rem);
-  }
 }
