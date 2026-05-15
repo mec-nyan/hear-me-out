@@ -1,6 +1,6 @@
 export type Lang = 'en' | 'es'
 
-export interface LanguageContextProps {
+export interface LanguageContextType {
   lang: Lang
   setLang: (lang: Lang) => void
 }

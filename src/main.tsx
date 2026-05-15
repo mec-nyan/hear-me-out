@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes } from 'react-router'
 import './index.css'
 import './config/i18n'
+import LanguageProvider from './context/LanguageProvider.tsx'
 import App from './App.tsx'
 import Chooser from './Chooser.tsx'
 import { Route } from 'react-router'
@@ -10,10 +11,13 @@ import { Route } from 'react-router'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/levels' element={<Chooser />} />
-      </Routes>
+      {/* TODO: Use user's preferred language (browser's). */}
+      <LanguageProvider initialLang='en'>
+        <Routes>
+          <Route path='/' element={<App />} />
+          <Route path='/levels' element={<Chooser />} />
+        </Routes>
+      </LanguageProvider>
     </BrowserRouter>
   </StrictMode>,
 )
