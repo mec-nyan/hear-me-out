@@ -21,7 +21,7 @@ function App() {
           {/* I've not decided the name yet. */}
           <h1>Hear me out!</h1>
 
-          <h2>Ear training for everyone.</h2>
+          <h2>{t('subtitle')}</h2>
         </div>
       </div>
 
@@ -30,7 +30,7 @@ function App() {
 
       {/* TODO: Add information in the footer. */}
       {/* This app is free (as in freedom) software, etc. */}
-      <footer>Made with <span className='love material-icons'>favorite</span> in <span className='helix'>Helix</span>.</footer>
+      <footer>{t('with-love.made')} <span className='love material-icons'>favorite</span> {t('with-love.in')} <span className='helix'>Helix</span>.</footer>
     </div>
   )
 }

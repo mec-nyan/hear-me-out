@@ -1,3 +1,8 @@
 {
-  "start": "¡Empecemos!"
+  "start": "¡Empecemos!",
+  "subtitle": "Entrenamiento auditivo para todos.",
+  "with-love": {
+    "made": "Hecho con",
+    "in": "en"
+  }
 }

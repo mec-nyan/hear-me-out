@@ -1,3 +1,8 @@
 {
-  "start": "Let's go!"
+  "start": "Let's go!",
+  "subtitle": "Ear training for everyone.",
+  "with-love": {
+    "made": "Made with",
+    "in": "in"
+  }
 }
