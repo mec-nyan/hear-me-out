@@ -11,9 +11,14 @@ function App() {
     <div className='app'>
       <div className='home-top'>
         <div className='top-bar'>
-          <span className='material-icons-outlined'>settings</span>
-          <span className='material-icons-outlined'>light_mode</span>
-          <LanguageSelector />
+          <div className='top-bar-left'>
+            <span className='material-icons-outlined'>settings</span>
+            <span className='material-icons-outlined'>question_mark</span>
+          </div>
+          <div className='top-bar-right'>
+            <span className='material-icons-outlined'>light_mode</span>
+            <LanguageSelector />
+          </div>
         </div>
         <div className='title'>
           <small className='author'>Nano's</small>
