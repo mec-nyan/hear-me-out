@@ -1,19 +1,14 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next"
 
+import type { Lang, LanguageContextProps, LanguageField } from "./types/lang";
+
 import './LanguageSelector.css'
 
-type Lang = 'en' | 'es'
 
-interface LanguageField {
-  name: string
-  flag: string
-  abbr: Lang
-}
-
-export default function LanguageSelector () {
+export default function LanguageSelector ({ lang, setLang }: LanguageContextProps) {
   const { i18n } = useTranslation();
-  const [ lang, setLang ] = useState<Lang>('en')
+  // const [ lang, setLang ] = useState<Lang>('en')
   const [ isOpen, setIsOpen ] = useState<boolean>(false)
 
   const handleLanguageChange = (newLang: Lang) => {

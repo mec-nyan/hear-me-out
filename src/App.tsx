@@ -1,9 +1,16 @@
-import './App.css'
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
+
+import './App.css'
+
+import type { Lang } from './types/lang';
+
 import LanguageSelector from './LanguageSelector';
 
+
 function App() {
+  const [ lang, setLang ] = useState<Lang>('en')
 
   const { t } = useTranslation();
 
@@ -17,7 +24,7 @@ function App() {
           </div>
           <div className='top-bar-right'>
             <span className='material-icons-outlined'>light_mode</span>
-            <LanguageSelector />
+            <LanguageSelector lang={lang} setLang={setLang} />
           </div>
         </div>
         <div className='title'>
