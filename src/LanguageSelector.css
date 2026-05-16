@@ -8,27 +8,27 @@
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
-  background-color: #181818;
-  border-left: 1px solid #303030;
-  border-right: 1px solid #303030;
+  background-color: var(--bg-primary);
+  border-left: 1px solid var(--fg-tertiary);
+  border-right: 1px solid var(--fg-tertiary);
   border-top: none;
   border-bottom: none;
   box-sizing: border-box;
 }
 
 .lang-popup div {
-  background-color: #181818;
+  background-color: var(--bg-primary);
   cursor: pointer;
   display: grid;
   grid-template-columns: 32px 16px 1fr;
   padding: 16px;
-  border-bottom: 1px solid #303030;
+  border-bottom: 1px solid var(--fg-tertiary);
   min-width: 150px;
-  transition: background-color 0.2s;
+  transition: background-color 0.3s;
 }
 
 .lang-popup div:hover {
-  background-color: #303030;
+  background-color: var(--fg-tertiary);
 }
 
 .flag {
@@ -41,5 +41,5 @@
 
 .current-lang {
   /* width: 16px; */
-  color: mediumpurple;
+  color: var(--fg-accent);
 }
