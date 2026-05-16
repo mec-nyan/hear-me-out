@@ -90,16 +90,16 @@
 .hint-locked {
   /* font-style: italic; */
   color: #606060;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .hint-done {
   color: mediumpurple;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }
 
 .hint-try {
   font-style: italic;
   color: goldenrod;
-  font-family: monospace;
+  font-family: 'Ubuntu Mono', monospace;
 }

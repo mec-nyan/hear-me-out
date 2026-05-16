@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
 
 * {
   padding: 0;
@@ -30,19 +30,18 @@
 }
 
 :root[data-font='sans-serif'] {
-  font-family: 'Ubuntu Sans', sans-serif;
+  --font-family: 'Ubuntu Sans', sans-serif;
 }
 
 :root[data-font='serif'] {
-  font-family: 'Charis SIL', serif;
-}
-
-:root {
-  background-color: var(--bg-primary);
-  color: var(--fg-primary);
+  --font-family: 'Charis SIL', serif;
 }
 
 #root {
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
+  font-family: var(--font-family);
+  transition: background-color 0.3s, color 0.3s;
   width: 100vw;
   height: 100vh;
 }
