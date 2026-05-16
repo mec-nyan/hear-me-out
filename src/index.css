@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -15,7 +17,6 @@
   --start-button-fg: white;
 }
 
-/* TODO: Choose colours for light theme. */
 :root[data-theme='light'] {
   --bg-primary: #d0d0d0;
   --fg-primary: #181818;
@@ -28,13 +29,10 @@
 
 }
 
-/* TODO: Ensure fonts are available */
 :root[data-font='sans-serif'] {
   font-family: 'Ubuntu Sans', sans-serif;
 }
 
-/* TODO: Ensure fonts are available,
-Choose a nice serif font. */
 :root[data-font='serif'] {
   font-family: 'Charis SIL', serif;
 }
