@@ -4,10 +4,33 @@
   box-sizing: border-box;
 }
 
-:root {
-  background-color: #181818;
-  color: #d0d0d0;
+:root[data-theme='dark'] {
+  --bg-primary: #181818;
+  --fg-primary: #d0d0d0;
+  --fg-secondary: #a0a0a0;
+  --fg-tertiary: #303030;
+  --fg-accent: mediumpurple;
+  --fg-pink: hotpink;
+  --button-bg: rebeccapurple;
+}
+
+/* TODO: Choose colours for light theme. */
+:root[data-theme='light'] {}
+
+/* TODO: Ensure fonts are available */
+:root[data-font='sans-serif'] {
   font-family: 'Ubuntu Sans', sans-serif;
+}
+
+/* TODO: Ensure fonts are available,
+Choose a nice serif font. */
+:root[data-font='serif'] {
+  font-family: serif;
+}
+
+:root {
+  background-color: var(--bg-primary);
+  color: var(--fg-primary);
 }
 
 #root {

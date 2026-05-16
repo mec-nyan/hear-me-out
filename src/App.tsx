@@ -19,6 +19,7 @@ function App() {
             <span className='material-icons-outlined'>question_mark</span>
           </div>
           <div className='top-bar-right'>
+            <span className='font-selector'>A</span>
             <span className='material-icons-outlined'>light_mode</span>
             <LanguageSelector />
           </div>

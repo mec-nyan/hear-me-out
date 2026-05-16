@@ -16,7 +16,7 @@
   outline: none;
   border: none;
   border-radius: 8px;
-  background-color: rebeccapurple;
+  background-color: var(--button-bg);
   color: white;
   transition: all 0.3s ease;
 }
@@ -34,33 +34,33 @@
 
 .title small {
   font-size: 1rem;
-  color: #a0a0a0;
+  color: var(--fg-secondary);
 }
 
 .title h1 {
-  color: mediumpurple;
+  color: var(--fg-accent);
 }
 
 .title h2 {
   margin-top: 2rem;
   font-weight: normal;
-  color: #a0a0a0;
+  color: var(--fg-secondary);
   text-align: center;
 }
 
 footer {
   font-size: 1rem;
   padding: 1rem;
-  color: #a0a0a0;
+  color: var(--fg-secondary);
 }
 
 .helix {
   font-weight: bold;
-  color: mediumpurple;
+  color: var(--fg-accent);
 }
 
 .love {
-  color: hotpink;
+  color: var(--fg-pink);
   transform: translateY(4px);
   font-size: 1.2rem;
 }
@@ -77,7 +77,7 @@ footer {
   padding: 0;
   align-items: center;
   box-sizing: border-box;
-  border-bottom: 1px solid #303030;
+  border-bottom: 1px solid var(--fg-tertiary);
 }
 
 .top-bar-left,
@@ -97,9 +97,10 @@ footer {
 }
 
 /* TODO: Move styles to its component's CSS file. */
-.top-bar .material-icons-outlined {
+.top-bar .material-icons-outlined,
+.top-bar .font-selector {
   min-width: 92px;
-  color: mediumpurple;
+  color: var(--fg-accent);
   font-size: 1.5rem;
   text-align: center;
   line-height: 56px;
