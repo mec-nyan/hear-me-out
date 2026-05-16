@@ -11,11 +11,22 @@
   --fg-tertiary: #303030;
   --fg-accent: mediumpurple;
   --fg-pink: hotpink;
-  --button-bg: rebeccapurple;
+  --start-button-bg: rebeccapurple;
+  --start-button-fg: white;
 }
 
 /* TODO: Choose colours for light theme. */
-:root[data-theme='light'] {}
+:root[data-theme='light'] {
+  --bg-primary: #d0d0d0;
+  --fg-primary: #181818;
+  --fg-secondary: #585858;
+  --fg-tertiary: #a0a0a0;
+  --fg-accent: rebeccapurple;
+  --fg-pink: hotpink;
+  --start-button-bg: rebeccapurple;
+  --start-button-fg: white;
+
+}
 
 /* TODO: Ensure fonts are available */
 :root[data-font='sans-serif'] {

@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import './App.css'
 
 import LanguageSelector from './LanguageSelector';
+import ThemeSelector from './ThemeSelector';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           </div>
           <div className='top-bar-right'>
             <span className='font-selector'>A</span>
-            <span className='material-icons-outlined'>light_mode</span>
+            <ThemeSelector />
             <LanguageSelector />
           </div>
         </div>
