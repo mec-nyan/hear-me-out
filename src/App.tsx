@@ -5,6 +5,7 @@ import './App.css'
 
 import LanguageSelector from './LanguageSelector';
 import ThemeSelector from './ThemeSelector';
+import FontSelector from './FontSelector';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
             <span className='material-icons-outlined'>question_mark</span>
           </div>
           <div className='top-bar-right'>
-            <span className='font-selector'>A</span>
+            <FontSelector />
             <ThemeSelector />
             <LanguageSelector />
           </div>

@@ -36,7 +36,7 @@
 /* TODO: Ensure fonts are available,
 Choose a nice serif font. */
 :root[data-font='serif'] {
-  font-family: serif;
+  font-family: 'Charis SIL', serif;
 }
 
 :root {

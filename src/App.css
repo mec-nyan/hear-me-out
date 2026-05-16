@@ -97,8 +97,7 @@ footer {
 }
 
 /* TODO: Move styles to its component's CSS file. */
-.top-bar .material-icons-outlined,
-.top-bar .font-selector {
+.top-bar .material-icons-outlined {
   min-width: 92px;
   color: var(--fg-accent);
   font-size: 1.5rem;
