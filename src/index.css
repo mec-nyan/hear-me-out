@@ -6,26 +6,41 @@
   box-sizing: border-box;
 }
 
+/* TOOD: Clean up theme and use RGB everywhere
+so we can add opacity when needed. */
 :root[data-theme='dark'] {
   --bg-primary: #181818;
+  --bg-primary-rgb: 24, 24, 24;
+  --bg-secondary: #1c1c1c;
+  --bg-tertiary: #242424;
   --fg-primary: #d0d0d0;
   --fg-secondary: #a0a0a0;
   --fg-tertiary: #303030;
+  --challenge-border: #383838;
   --fg-accent: mediumpurple;
   --fg-pink: hotpink;
   --start-button-bg: rebeccapurple;
   --start-button-fg: white;
+  --unlocked-icon: darkgoldenrod;
+  --unlocked-hint1: goldenrod;
+
 }
 
 :root[data-theme='light'] {
   --bg-primary: #d0d0d0;
+  --bg-primary-rgb: 208, 208, 208;
+  --bg-secondary: #c8c8c8;
+  --bg-tertiary: #c0c0c0;
   --fg-primary: #181818;
   --fg-secondary: #585858;
   --fg-tertiary: #a0a0a0;
+  --challenge-border: #a8a8a8;
   --fg-accent: rebeccapurple;
   --fg-pink: hotpink;
   --start-button-bg: rebeccapurple;
   --start-button-fg: white;
+  --unlocked-icon: darkgoldenrod;
+  --unlocked-hint1: darkgoldenrod;
 
 }
 
