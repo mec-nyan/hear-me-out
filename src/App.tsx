@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router'
 
 import './App.css'
+import logo from '../logo.svg'
 
 import LanguageSelector from './LanguageSelector';
 import ThemeSelector from './ThemeSelector';
@@ -26,6 +27,7 @@ function App() {
             <LanguageSelector />
           </div>
         </div>
+
         <div className='title'>
           <small className='author'>Nano's</small>
 
@@ -33,6 +35,9 @@ function App() {
           <h1>Hear me out!</h1>
 
           <h2>{t('subtitle')}</h2>
+
+          <img className='logo-big' src={logo} alt='hear-me-logo' />
+
         </div>
       </div>
 

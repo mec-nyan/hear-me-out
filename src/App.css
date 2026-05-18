@@ -106,3 +106,9 @@ footer {
   cursor: pointer;
   user-select: none;
 }
+
+.logo-big {
+  width: 140px;
+  padding: 0x;
+  margin-top: 3rem;
+}
