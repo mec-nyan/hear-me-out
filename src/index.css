@@ -9,39 +9,72 @@
 /* TOOD: Clean up theme and use RGB everywhere
 so we can add opacity when needed. */
 :root[data-theme='dark'] {
-  --bg-primary: #181818;
-  --bg-primary-rgb: 24, 24, 24;
-  --bg-secondary: #1c1c1c;
-  --bg-tertiary: #242424;
-  --fg-primary: #d0d0d0;
-  --fg-secondary: #a0a0a0;
-  --fg-tertiary: #303030;
-  --challenge-border: #383838;
-  --fg-accent: mediumpurple;
-  --fg-pink: hotpink;
-  --start-button-bg: rebeccapurple;
-  --start-button-fg: white;
-  --unlocked-icon: darkgoldenrod;
-  --unlocked-hint1: goldenrod;
+  /* --bg-primary: #181818; */
+  /* --bg-primary-rgb: 24, 24, 24; */
+  /* --bg-secondary: #1c1c1c; */
+  /* --bg-tertiary: #242424; */
+  /* --fg-primary: #d0d0d0; */
+  /* --fg-secondary: #a0a0a0; */
+  /* --fg-tertiary: #303030; */
+  /* --challenge-border: #383838; */
+  /* --fg-accent: mediumpurple; */
+  /* --fg-pink: hotpink; */
+  /* --start-button-bg: rebeccapurple; */
+  /* --start-button-fg: white; */
+  /* --unlocked-icon: darkgoldenrod; */
+  /* --unlocked-hint1: goldenrod; */
 
+  /* WIP: Replacing palette names to get more flexibility when switching themes. */
+  --bg-primary: 24, 24, 24;
+  --bg-secondary: 28, 28, 28;
+  --bg-tertiary: 36, 36, 36;
+
+  --fg-primary: 160, 160, 160;
+  --fg-secondary: 56, 56, 56;
+  --fg-tertiary: 48, 48, 48;
+
+  --accent-1: mediumpurple;
+  --accent-2: rebeccapurple;
+  --golden-1: darkgoldenrod;
+  --golden-2: goldenrod;
+
+  --love: hotpink;
+
+  --white: white;
 }
 
 :root[data-theme='light'] {
-  --bg-primary: #d0d0d0;
-  --bg-primary-rgb: 208, 208, 208;
-  --bg-secondary: #c8c8c8;
-  --bg-tertiary: #c0c0c0;
-  --fg-primary: #181818;
-  --fg-secondary: #585858;
-  --fg-tertiary: #a0a0a0;
-  --challenge-border: #a8a8a8;
-  --fg-accent: rebeccapurple;
-  --fg-pink: hotpink;
-  --start-button-bg: rebeccapurple;
-  --start-button-fg: white;
-  --unlocked-icon: darkgoldenrod;
-  --unlocked-hint1: darkgoldenrod;
+  /* --bg-primary: #d0d0d0; */
+  /* --bg-primary-rgb: 208, 208, 208; */
+  /* --bg-secondary: #c8c8c8; */
+  /* --bg-tertiary: #c0c0c0; */
+  /* --fg-primary: #181818; */
+  /* --fg-secondary: #585858; */
+  /* --fg-tertiary: #a0a0a0; */
+  /* --challenge-border: #a8a8a8; */
+  /* --fg-accent: rebeccapurple; */
+  /* --fg-pink: hotpink; */
+  /* --start-button-bg: rebeccapurple; */
+  /* --start-button-fg: white; */
+  /* --unlocked-icon: darkgoldenrod; */
+  /* --unlocked-hint1: darkgoldenrod; */
 
+  --bg-primary: 208, 208, 208;
+  --bg-secondary: 200, 200, 200;
+  --bg-tertiary: 192, 192, 192;
+
+  --fg-primary: 24, 24, 24;
+  --fg-secondary: 56, 56, 56;
+  --fg-tertiary: 48, 48, 48;
+
+  --accent-1: mediumpurple;
+  --accent-2: rebeccapurple;
+  --golden-1: darkgoldenrod;
+  --golden-2: goldenrod;
+
+  --love: hotpink;
+
+  --white: white;
 }
 
 :root[data-font='sans-serif'] {
@@ -53,8 +86,8 @@ so we can add opacity when needed. */
 }
 
 #root {
-  background-color: var(--bg-primary);
-  color: var(--fg-primary);
+  background-color: rgb(var(--bg-primary));
+  color: rgb(var(--fg-primary));
   font-family: var(--font-family);
   transition: background-color 0.3s, color 0.3s;
   width: 100vw;

@@ -8,27 +8,27 @@
   position: absolute;
   top: calc(100% + 4px);
   right: 0;
-  background-color: var(--bg-primary);
-  border-left: 1px solid var(--fg-tertiary);
-  border-right: 1px solid var(--fg-tertiary);
+  background-color: rgb(var(--bg-primary));
+  border-left: 1px solid rgb(var(--fg-secondary));
+  border-right: 1px solid rgb(var(--fg-secondary));
   border-top: none;
   border-bottom: none;
   box-sizing: border-box;
 }
 
 .lang-popup div {
-  background-color: var(--bg-primary);
+  background-color: rgb(var(--bg-primary));
   cursor: pointer;
   display: grid;
   grid-template-columns: 32px 16px 1fr;
   padding: 16px;
-  border-bottom: 1px solid var(--fg-tertiary);
+  border-bottom: 1px solid rgb(var(--fg-secondary));
   min-width: 150px;
   transition: background-color 0.3s;
 }
 
 .lang-popup div:hover {
-  background-color: var(--fg-tertiary);
+  background-color: rgb(var(--fg-secondary));
 }
 
 .flag {
@@ -41,5 +41,5 @@
 
 .current-lang {
   /* width: 16px; */
-  color: var(--fg-accent);
+  color: var(--accent-1);
 }
