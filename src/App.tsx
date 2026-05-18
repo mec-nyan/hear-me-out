@@ -31,8 +31,10 @@ function App() {
         <div className='title'>
           <small className='author'>Nano's</small>
 
-          {/* I've not decided the name yet. */}
-          <h1>Hear me out!</h1>
+          {/* I've not decided the name yet.
+          Notable seems like a good choice, since it's a pun on "note"
+          and it's written the same in English and Spanish. */}
+          <h1>Notable</h1>
 
           <h2>{t('subtitle')}</h2>
 
