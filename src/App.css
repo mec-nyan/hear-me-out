@@ -17,7 +17,7 @@
   outline: none;
   border: none;
   border-radius: 8px;
-  background-color: var(--accent-2);
+  background-color: var(--start);
   color: var(--white);
   transition: all 0.3s ease;
 }
@@ -39,7 +39,7 @@
 }
 
 .title h1 {
-  color: var(--accent-1);
+  color: var(--accent);
 }
 
 .title h2 {
@@ -57,7 +57,7 @@ footer {
 
 .helix {
   font-weight: bold;
-  color: var(--accent-1);
+  color: var(--accent);
 }
 
 .love {
@@ -78,7 +78,7 @@ footer {
   padding: 0;
   align-items: center;
   box-sizing: border-box;
-  border-bottom: 1px solid rgb(var(--fg-secondary));
+  border-bottom: 1px solid rgb(var(--border-1));
 }
 
 .top-bar-left,
@@ -100,7 +100,7 @@ footer {
 /* TODO: Move styles to its component's CSS file. */
 .top-bar .material-icons-outlined {
   min-width: 92px;
-  color: var(--accent-1);
+  color: var(--accent);
   font-size: 1.5rem;
   text-align: center;
   line-height: 56px;

@@ -12,7 +12,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(var(--bg-primary-rgb), .5);
+  background-color: rgba(var(--bg-primary), .5);
   width: 100%;
   display: grid;
   grid-template-columns: 64px 1fr 64px;
@@ -21,23 +21,23 @@
   align-items: center;
   justify-items: center;
   /* TODO: extract to variables. Maybe use sass. */
-  border-bottom: 1px solid var(--fg-tertiary);
+  border-bottom: 1px solid rgb(var(--border-1));
   backdrop-filter: blur(4px);
 }
 
 .top-title {
-  color: var(--fg-primary);
+  color: rgb(var(--fg-primary));
   font-size: 1.4rem;
 }
 
 .icon-left {
-  color: var(--fg-accent);
+  color: var(--accent);
   font-size: 1.5rem;
   /* border: 1px solid orange; */
 }
 
 .help-icon {
-  color: var(--fg-accent);
+  color: var(--accent);
   font-size: 1.5rem;
   /* border: 1px solid orange; */
 }
@@ -53,12 +53,12 @@
   align-items: center;
   justify-items: center;
   border-radius: 8px;
-  background-color: var(--bg-tertiary);
-  color: var(--fg-secondary);
+  background-color: rgb(var(--bg-tertiary));
+  color: rgb(var(--fg-primary));
   height: 5rem;
   margin: 0.8rem 10%;
   width: 80%;
-  border: 1px solid var(--challenge-border);
+  border: 1px solid rgb(var(--border-1));
 }
 
 .title-group {
@@ -71,20 +71,20 @@
 }
 
 .locked {
-  color: var(--fg-tertiary);
-  background-color: var(--bg-secondary);
-  border: 1px solid var(--fg-tertiary);
+  color: rgb(var(--fg-tertiary));
+  background-color: rgb(var(--bg-secondary));
+  border: 1px solid rgb(var(--border-2));
 }
 
 .icon-locked,
 .icon-unlocked {
   /* transform: translateY(4px); */
   font-size: 2rem;
-  color: var(--fg-accent);
+  color: var(--icon-locked);
 }
 
 .icon-unlocked {
-  color: var(--unlocked-icon);
+  color: var(--icon-unlocked);
 }
 
 .hint-locked {
@@ -94,12 +94,12 @@
 }
 
 .hint-done {
-  color: var(--fg-accent);
+  color: var(--hint-completed);
   font-family: 'Ubuntu Mono', monospace;
 }
 
 .hint-try {
   font-style: italic;
-  color: var(--unlocked-hint1);
+  color: var(--hint-try);
   font-family: 'Ubuntu Mono', monospace;
 }

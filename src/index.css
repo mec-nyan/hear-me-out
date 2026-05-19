@@ -6,37 +6,27 @@
   box-sizing: border-box;
 }
 
-/* TOOD: Clean up theme and use RGB everywhere
-so we can add opacity when needed. */
 :root[data-theme='dark'] {
-  /* --bg-primary: #181818; */
-  /* --bg-primary-rgb: 24, 24, 24; */
-  /* --bg-secondary: #1c1c1c; */
-  /* --bg-tertiary: #242424; */
-  /* --fg-primary: #d0d0d0; */
-  /* --fg-secondary: #a0a0a0; */
-  /* --fg-tertiary: #303030; */
-  /* --challenge-border: #383838; */
-  /* --fg-accent: mediumpurple; */
-  /* --fg-pink: hotpink; */
-  /* --start-button-bg: rebeccapurple; */
-  /* --start-button-fg: white; */
-  /* --unlocked-icon: darkgoldenrod; */
-  /* --unlocked-hint1: goldenrod; */
-
-  /* WIP: Replacing palette names to get more flexibility when switching themes. */
   --bg-primary: 24, 24, 24;
   --bg-secondary: 28, 28, 28;
   --bg-tertiary: 36, 36, 36;
 
   --fg-primary: 160, 160, 160;
-  --fg-secondary: 56, 56, 56;
-  --fg-tertiary: 48, 48, 48;
+  --fg-secondary: 120, 120, 120;
+  --fg-tertiary: 80, 80, 80;
 
-  --accent-1: mediumpurple;
-  --accent-2: rebeccapurple;
-  --golden-1: darkgoldenrod;
-  --golden-2: goldenrod;
+  /* These are borders. */
+  --border-1: 56, 56, 56;
+  --border-2: 48, 48, 48;
+
+  --accent: mediumpurple;
+
+  --start: rebeccapurple;
+
+  --icon-locked: mediumpurple;
+  --icon-unlocked: darkgoldenrod;
+  --hint-completed: mediumpurple;
+  --hint-try: goldenrod;
 
   --love: hotpink;
 
@@ -44,33 +34,26 @@ so we can add opacity when needed. */
 }
 
 :root[data-theme='light'] {
-  /* --bg-primary: #d0d0d0; */
-  /* --bg-primary-rgb: 208, 208, 208; */
-  /* --bg-secondary: #c8c8c8; */
-  /* --bg-tertiary: #c0c0c0; */
-  /* --fg-primary: #181818; */
-  /* --fg-secondary: #585858; */
-  /* --fg-tertiary: #a0a0a0; */
-  /* --challenge-border: #a8a8a8; */
-  /* --fg-accent: rebeccapurple; */
-  /* --fg-pink: hotpink; */
-  /* --start-button-bg: rebeccapurple; */
-  /* --start-button-fg: white; */
-  /* --unlocked-icon: darkgoldenrod; */
-  /* --unlocked-hint1: darkgoldenrod; */
-
   --bg-primary: 208, 208, 208;
   --bg-secondary: 200, 200, 200;
   --bg-tertiary: 192, 192, 192;
 
-  --fg-primary: 24, 24, 24;
-  --fg-secondary: 56, 56, 56;
-  --fg-tertiary: 48, 48, 48;
+  --fg-primary: 88, 88, 88;
+  --fg-secondary: 120, 120, 120;
+  --fg-tertiary: 140, 140, 140;
 
-  --accent-1: mediumpurple;
-  --accent-2: rebeccapurple;
-  --golden-1: darkgoldenrod;
-  --golden-2: goldenrod;
+
+  --border-1: 160, 160, 160;
+  --border-2: 168, 168, 168;
+
+  --accent: rebeccapurple;
+
+  --start: rebeccapurple;
+
+  --icon-locked: mediumpurple;
+  --icon-unlocked: darkgoldenrod;
+  --hint-completed: rebeccapurple;
+  --hint-try: darkgoldenrod;
 
   --love: hotpink;
 
